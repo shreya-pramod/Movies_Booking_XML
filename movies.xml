@@ -1,0 +1,94 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="fandango.xslt"?>  
+<!DOCTYPE Movies SYSTEM "fandango.dtd">
+<Movies>   
+    <Theatre>
+        <TheatreName>Regal Henrietta</TheatreName>
+        <TheatreAddress street="525 Marketplace Drive" city="Rochester" state="NY" />
+        <Movie>
+            <MovieName>Pathaan(2022)</MovieName>
+            <MovieTimings>
+                <MovieTiming>1:45pm</MovieTiming>
+                <MovieTiming>5:45pm</MovieTiming>
+            </MovieTimings>
+            <Genres>
+                <Genre>Action/Adventure</Genre>
+                <Genre>Mystery and Thriller</Genre>
+                <Genre>Romance</Genre>
+                <Genre>Suspense/Thriller</Genre>
+            </Genres>
+            <Poster>pathaan.jpg</Poster>
+        </Movie>
+        <Movie>
+            <MovieName>House Party(2023)</MovieName>
+            <MovieTimings>
+                <MovieTiming>12:40pm</MovieTiming>
+                <MovieTiming>3:30pm</MovieTiming>
+                <MovieTiming>7:20pm</MovieTiming>
+            </MovieTimings>
+            <Genres>
+                <Genre>Comedy</Genre>
+            </Genres>
+            <Rating>R</Rating>
+            <Poster>houseparty.jpg</Poster>
+        </Movie>
+        <Movie>
+            <MovieName>Whitney Houston: I Wanna Dance With Somebody(2022)</MovieName>
+            <MovieTimings>
+                <MovieTiming>3:30pm</MovieTiming>
+            </MovieTimings>
+            <Genres>
+                <Genre>Biography</Genre>
+                <Genre>Drama</Genre>
+                <Genre>Music/Performing Arts</Genre>
+            </Genres>
+            <Rating>PG-13</Rating>
+            <Poster>houston.jpg</Poster>
+        </Movie>
+    </Theatre>
+    <Theatre>
+        <TheatreName>Regal EastView Mall</TheatreName>
+        <TheatreAddress street="70 Eastview Mall Drive" city="Victor" state="NY" />
+        <Movie>
+            <MovieName>BTS:Yet To Come In Cinemas(2023)</MovieName>
+            <MovieTimings>
+                <MovieTiming>5:00pm</MovieTiming>
+            </MovieTimings>
+            <Genres>
+                <Genre>Concert/Special Events</Genre>
+                <Genre>Music/Performing Arts</Genre>
+            </Genres>
+            <Poster>bts.png</Poster>
+        </Movie>
+        <Movie>
+            <MovieName>A Man Called Otto(2022)</MovieName>
+            <MovieTimings>
+                <MovieTiming>11:15am</MovieTiming>
+                <MovieTiming>11:40am</MovieTiming>
+                <MovieTiming>2:40pm</MovieTiming>
+                <MovieTiming>6:00pm</MovieTiming>
+                <MovieTiming>6:40pm</MovieTiming>
+            </MovieTimings>
+            <Genres>
+                <Genre>Comedy</Genre>
+                <Genre>Drama</Genre>
+            </Genres>
+            <Rating>PG-13</Rating>
+            <Poster>otto.jpg</Poster>
+        </Movie>
+        <Movie>
+            <MovieName>Black Panther:Wakanda Forever(2022)</MovieName>
+            <MovieTimings>
+                <MovieTiming>11:25am</MovieTiming>
+                <MovieTiming>3:10pm</MovieTiming>
+                <MovieTiming>6:50pm</MovieTiming>
+            </MovieTimings>
+            <Genres>
+                <Genre>Action/Adventure</Genre>
+                <Genre>Sci-Fi/Fantasy</Genre>
+            </Genres>
+            <Rating>PG-13</Rating>
+            <Poster>wakanda.jpg</Poster>
+        </Movie>
+    </Theatre>
+</Movies>

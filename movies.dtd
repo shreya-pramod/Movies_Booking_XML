@@ -1,0 +1,20 @@
+<!ELEMENT Movies (Theatre+)>
+
+<!ELEMENT Theatre (TheatreName, TheatreAddress, Movie+)>
+<!ELEMENT TheatreName (#PCDATA)>
+<!ELEMENT TheatreAddress (#PCDATA)>
+<!ATTLIST TheatreAddress street CDATA #REQUIRED 
+                         city CDATA "Rochester"
+                         state CDATA "NY">
+
+<!ELEMENT Movie (MovieName, MovieTimings, Genres, Rating?, Poster)>
+<!ELEMENT MovieName (#PCDATA)> 
+<!ELEMENT Rating (#PCDATA)>
+<!ELEMENT Poster (#PCDATA)>
+
+
+<!ELEMENT MovieTimings (MovieTiming+)>
+<!ELEMENT MovieTiming (#PCDATA)>
+
+<!ELEMENT Genres (Genre+)>
+<!ELEMENT Genre (#PCDATA)>

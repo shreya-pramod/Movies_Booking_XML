@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="https://rit.edu/ISTE610/XMLProject"
+        xmlns:mov="https://rit.edu/ISTE610/XMLProject"
+        elementFormDefault="qualified">
+    
+
+    <simpleType name="MovieTiming">
+        <restriction base="string">
+            <pattern value="(0?[0-9]|1[0-2]):[0-5][0-9](am|pm)" /><!-- 0_:__ or __:__-->
+        </restriction>
+    </simpleType>
+    <element name="Movies">
+        <complexType>
+            <sequence>
+                <element name="Theatre" maxOccurs="unbounded" minOccurs="2">
+                    <complexType>
+                        <sequence>
+                           <element name="TheatreName" type="string" />
+                           <element name="TheatreAddress">
+                            <complexType>
+                                <attribute name="street" type="string" />
+                                <attribute name="city" type="string" />
+                                <attribute name="state" type="string" />
+                            </complexType>
+                           </element>
+                           <element name="Movie" maxOccurs="unbounded" minOccurs="3">
+                            <complexType>
+                                <sequence>
+                                    <element name="MovieName" type="string"/>
+                                    <element name="MovieTimings">
+                                        <complexType>
+                                            <sequence>
+                                                <element name="MovieTiming" maxOccurs="unbounded" minOccurs="1" >
+                                                    <complexType>
+                                                        <simpleContent>
+                                                            <extension base="mov:MovieTiming"></extension>
+                                                        </simpleContent>
+                                                    </complexType>
+                                                </element>
+                                            </sequence>
+                                        </complexType>
+                                    </element>
+                                    <element name="Genres">
+                                        <complexType>
+                                            <sequence>
+                                                <element name="Genre" maxOccurs="unbounded" minOccurs="1" />
+                                            </sequence>
+                                        </complexType>
+                                    </element>
+                                    <element name="Rating" type="string" maxOccurs="unbounded" minOccurs="0"/>
+                                    <element name="Poster" type="string" />
+                                </sequence>
+                            </complexType>
+                           </element>
+                        </sequence>
+                    </complexType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+</schema>
